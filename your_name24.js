@@ -118,18 +118,14 @@ fetch('https://aurashktest.github.io/aurashktest/akeveningroutebuildings.geojson
 
 
 
-// Define colors for different categories
 var categoryColors = {
-    "hurricane_1": "red",
-    "hurricane_2": "orange",
-    "hurricane_3": "yellow",
-    "hurricane_4": "green",
-    "hurricane_5": "green",
-    "hurricane_6": "green",
-    "hurricane_7": "green",
-
-    "hurricane_X": "gray" // Default color for other categories
+    "1": "red",
+    "2": "orange",
+    "3": "yellow",
+    "4": "green",
+    "X": "gray" // Default color for other categories
 };
+
 
 // Function to set style based on category
 function getFeatureStyle(feature) {
