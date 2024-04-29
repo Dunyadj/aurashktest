@@ -113,3 +113,20 @@ fetch('https://aurashktest.github.io/aurashktest/akeveningroutebuildings.geojson
 .catch(error => {
     console.error('Error loading GeoJSON file:', error);
 });
+
+
+
+// Load the GeoJSON polygon file
+fetch('https://aurashktest.github.io/aurashktest/hev.geojson')
+.then(response => response.json())
+.then(geojson => {
+ 
+
+    // Add the GeoJSON polygon to the map
+    L.geoJSON(geojson, {
+        style: polygonStyle
+    }).addTo(map);
+})
+.catch(error => {
+    console.error('Error loading GeoJSON file:', error);
+});
