@@ -17,7 +17,7 @@ marker.bindPopup("<b>Edit Hello New York City!</b><br>This is a Leaflet map.").o
 
 
 // Load the GeoJSON line file
-fetch('https://aurashktest.github.io/akdaytimeroute.geojson')
+fetch('https://aurashktest.github.io/aurashktest/akdaytimeroute.geojson')
     .then(response => response.json())
     .then(geojson => {
         // Customize the style of the line
