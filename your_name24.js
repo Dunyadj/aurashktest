@@ -29,7 +29,7 @@ var prattinstmarker = L.marker([40.69099831383163, -73.96332055134893]).addTo(ma
 // Add a popup to the marker
 prattinstmarker.bindPopup(`
     <b>Pratt Institute</b><br>Sculpture Garden and green space <br>
-    <img src="https://aurashktest.github.io/aurashktest/images/prattins.png" style="width: 100px; height: auto;">
+    <img src="https://aurashktest.github.io/aurashktest/images/pratt.jpg" style="width: 100px; height: auto;">
 `).openPopup();
 
 
@@ -42,7 +42,7 @@ var ftgreeneparkmarker = L.marker([40.69271525220281, -73.97682542294763]).addTo
 // Add a popup to the marker
 ftgreeneparkmarker.bindPopup(`
     <b>Ft Greene Park</b><br>Prison Ship Martrys Monument has good views of the city.<br>
-    <img src="https://aurashktest.github.io/aurashktest/images/psm.png"  style="width: 100px; height: auto;">
+    <img src="https://aurashktest.github.io/aurashktest/images/psm.jpg"  style="width: 100px; height: auto;">
 `).openPopup();
 
 
