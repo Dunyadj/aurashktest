@@ -16,7 +16,7 @@ var luigismarker = L.marker([40.68965691085725, -73.96537769031497]).addTo(map);
 // Add a popup to the marker
 luigismarker.bindPopup(`
     <b>Luigi's Pizza</b><br>Best pizza on Dekalb Ave<br>
-    <img src="https://aurashktest.github.io/aurashktest/images/luigis.png" alt="Luigi's Pizza" style="width: 100px; height: auto;">
+    <img src="https://aurashktest.github.io/aurashktest/images/luigis.png" style="width: 100px; height: auto;">
 `).openPopup();
 
 
@@ -29,7 +29,7 @@ var prattinstmarker = L.marker([40.69099831383163, -73.96332055134893]).addTo(ma
 // Add a popup to the marker
 prattinstmarker.bindPopup(`
     <b>Pratt Institute</b><br>Sculpture Garden and green space <br>
-    <img src="https://aurashktest.github.io/aurashktest/images/prattins.png" alt="Luigi's Pizza" style="width: 100px; height: auto;">
+    <img src="https://aurashktest.github.io/aurashktest/images/prattins.png" style="width: 100px; height: auto;">
 `).openPopup();
 
 
@@ -42,7 +42,7 @@ var ftgreeneparkmarker = L.marker([40.69271525220281, -73.97682542294763]).addTo
 // Add a popup to the marker
 ftgreeneparkmarker.bindPopup(`
     <b>Ft Greene Park</b><br>Prison Ship Martrys Monument has good views of the city.<br>
-    <img src="https://aurashktest.github.io/aurashktest/images/psm.png" alt="Luigi's Pizza" style="width: 100px; height: auto;">
+    <img src="https://aurashktest.github.io/aurashktest/images/psm.png"  style="width: 100px; height: auto;">
 `).openPopup();
 
 
@@ -93,14 +93,15 @@ fetch('https://aurashktest.github.io/aurashktest/akeveningroute.geojson')
 
 
 
+
+
     // Load the GeoJSON polygon file
     fetch('https://aurashktest.github.io/aurashktest/akeveningroutebuildings.geojson')
     .then(response => response.json())
     .then(geojson => {
         // Customize the style of the line
         var polygonStyle = {
-            color: 'blue', // Change color as needed
-            weight: 5, // Change weight as needed
+            color: 'black', // Change color as needed
             opacity: 0.7 // Change opacity as needed
         };
     
