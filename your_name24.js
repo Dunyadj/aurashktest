@@ -10,4 +10,27 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 var marker = L.marker([40.68965691085725, -73.96537769031497]).addTo(map);
 
 // Add a popup to the marker
-marker.bindPopup("<b>Luigi's Pizza</b><br>This is a Leaflet map.").openPopup();
+marker.bindPopup("<b>Hello New York City!</b><br>This is a Leaflet map.").openPopup();
+
+
+
+
+// Load the GeoJSON line file
+fetch('path/to/your/geojson/line/file.geojson')
+    .then(response => response.json())
+    .then(geojson => {
+        // Customize the style of the line
+        var lineStyle = {
+            color: 'red', // Change color as needed
+            weight: 5, // Change weight as needed
+            opacity: 0.7 // Change opacity as needed
+        };
+
+        // Add the GeoJSON line to the map
+        L.geoJSON(geojson, {
+            style: lineStyle
+        }).addTo(map);
+    })
+    .catch(error => {
+        console.error('Error loading GeoJSON file:', error);
+    });
