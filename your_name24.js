@@ -131,7 +131,7 @@ var categoryColors = {
 function getFeatureStyle(feature) {
     var category = feature.properties.hurricane_; // Adjust property name
     var color = categoryColors[category] || "gray"; // Default color if category not found
-    var fillOpacity = category === "X" ? 0 : 0.1; // Set fill opacity to 0 for "X" category
+    var fillOpacity = category === "X" ? 0 : 0.6; // Set fill opacity to 0 for "X" category
     return {
         fillColor: color,
         fillOpacity: fillOpacity,
