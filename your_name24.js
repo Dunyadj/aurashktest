@@ -25,8 +25,6 @@ luigismarker.bindPopup(`
 // Add a marker to the map for New York City
 var prattinstmarker = L.marker([40.69099831383163, -73.96332055134893]).addTo(map);
 
-// Add a popup to the marker
-prattinstmarker.bindPopup("").openPopup();
 
 // Add a popup to the marker
 prattinstmarker.bindPopup(`
@@ -40,8 +38,6 @@ prattinstmarker.bindPopup(`
 // Add a marker to the map for New York City
 var ftgreeneparkmarker = L.marker([40.69271525220281, -73.97682542294763]).addTo(map);
 
-// Add a popup to the marker
-ftgreeneparkmarker.bindPopup("").openPopup();
 
 // Add a popup to the marker
 ftgreeneparkmarker.bindPopup(`
