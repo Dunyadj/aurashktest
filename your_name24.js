@@ -43,7 +43,7 @@ fetch('https://aurashktest.github.io/aurashktest/akeveningroute.geojson')
 .then(geojson => {
     // Customize the style of the line
     var lineStyle = {
-        color: 'red', // Change color as needed
+        color: 'yellow', // Change color as needed
         weight: 5, // Change weight as needed
         opacity: 0.7 // Change opacity as needed
     };
