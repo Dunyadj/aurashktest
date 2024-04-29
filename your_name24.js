@@ -116,20 +116,35 @@ fetch('https://aurashktest.github.io/aurashktest/akeveningroutebuildings.geojson
 
 
 
+
+
+
+// Define colors for different categories
+var categoryColors = {
+    "hurricane_1": "red",
+    "hurricane_2": "orange",
+    "hurricane_3": "yellow",
+    "hurricane_4": "green",
+    // Add more categories and colors as needed
+};
+
+// Function to set style based on category
+function getFeatureStyle(feature) {
+    var category = feature.properties.hurricane_; // Adjust property name
+    var color = categoryColors[category] || "gray"; // Default color if category not found
+    return {
+        fillColor: color,
+        fillOpacity: 0.5,
+    };
+}
+
 // Load the GeoJSON polygon file
 fetch('https://aurashktest.github.io/aurashktest/hev.geojson')
 .then(response => response.json())
 .then(geojson => {
- 
-        // Customize the style of the polygon
-        var polygonStyle = {
-            fillColor: 'black', // Fill color
-            fillOpacity: 0.5, // Fill opacity
-        };
-
-    // Add the GeoJSON polygon to the map
+    // Add the GeoJSON polygons to the map with customized style
     L.geoJSON(geojson, {
-        style: polygonStyle
+        style: getFeatureStyle
     }).addTo(map);
 })
 .catch(error => {
