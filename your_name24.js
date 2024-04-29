@@ -89,3 +89,27 @@ fetch('https://aurashktest.github.io/aurashktest/akeveningroute.geojson')
 .catch(error => {
     console.error('Error loading GeoJSON file:', error);
 });
+
+
+
+
+    // Load the GeoJSON polygon file
+    fetch('https://aurashktest.github.io/aurashktest/akeveningroutebuildings.geojson')
+    .then(response => response.json())
+    .then(geojson => {
+        // Customize the style of the line
+        var polygonStyle = {
+            color: 'blue', // Change color as needed
+            weight: 5, // Change weight as needed
+            opacity: 0.7 // Change opacity as needed
+        };
+    
+        // Add the GeoJSON line to the map
+        L.geoJSON(geojson, {
+            style: polygonStyle
+        }).addTo(map);
+    })
+    .catch(error => {
+        console.error('Error loading GeoJSON file:', error);
+    });
+    
