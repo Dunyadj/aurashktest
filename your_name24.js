@@ -6,14 +6,28 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap contributors'
 }).addTo(map);
 
+
+
 // Add a marker to the map for New York City
-var marker = L.marker([40.68965691085725, -73.96537769031497]).addTo(map);
+var luigismarker = L.marker([40.68965691085725, -73.96537769031497]).addTo(map);
 
 // Add a popup to the marker
-marker.bindPopup("<b>Edit Hello New York City!</b><br>This is a Leaflet map.").openPopup();
+luigismarker.bindPopup("<b>Luigis Pizza</b><br>Best pizza on Dekalb Ave").openPopup();
+
+
+// Add a marker to the map for New York City
+var prattinstmarker = L.marker([40.69099831383163, -73.96332055134893]).addTo(map);
+
+// Add a popup to the marker
+prattinstmarker.bindPopup("<b>Pratt Institute</b><br>Sculpture Garden and green space").openPopup();
 
 
 
+// Add a marker to the map for New York City
+var ftgreeneparkmarker = L.marker([40.69271525220281, -73.97682542294763]).addTo(map);
+
+// Add a popup to the marker
+ftgreeneparkmarker.bindPopup("<b>Ft Greene Park</b><br>Prison Ship Martrys Monument has good views of the city.").openPopup();
 
 
 // Load the GeoJSON line file
