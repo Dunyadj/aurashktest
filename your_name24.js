@@ -124,6 +124,10 @@ var categoryColors = {
     "hurricane_2": "orange",
     "hurricane_3": "yellow",
     "hurricane_4": "green",
+    "hurricane_5": "green",
+    "hurricane_6": "green",
+    "hurricane_7": "green",
+
     "hurricane_X": "gray" // Default color for other categories
 };
 
