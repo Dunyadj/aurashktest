@@ -121,6 +121,11 @@ fetch('https://aurashktest.github.io/aurashktest/hev.geojson')
 .then(response => response.json())
 .then(geojson => {
  
+        // Customize the style of the polygon
+        var polygonStyle = {
+            fillColor: 'black', // Fill color
+            fillOpacity: 0.5, // Fill opacity
+        };
 
     // Add the GeoJSON polygon to the map
     L.geoJSON(geojson, {
