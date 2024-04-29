@@ -10,13 +10,13 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 var marker = L.marker([40.68965691085725, -73.96537769031497]).addTo(map);
 
 // Add a popup to the marker
-marker.bindPopup("<b>Hello New York City!</b><br>This is a Leaflet map.").openPopup();
+marker.bindPopup("<b>Edit Hello New York City!</b><br>This is a Leaflet map.").openPopup();
 
 
 
 
 // Load the GeoJSON line file
-fetch('path/to/your/geojson/line/file.geojson')
+fetch('https://aurashktest.github.io/aurashktest/akwalkroute.geojson')
     .then(response => response.json())
     .then(geojson => {
         // Customize the style of the line
