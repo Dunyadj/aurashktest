@@ -1,5 +1,5 @@
 // Initialize Leaflet map
-var map = L.map('nymap').setView([40.681801312931455, -73.9571896025164], 13); // Set center to New York City and zoom level
+var map = L.map('nymap').setView([40.62081° N, 74.02676° W], 13); // Set center to New York City and zoom level
 
 // Add a tile layer to the map (for example, OpenStreetMap)
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -11,7 +11,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 
 // Add a marker to the map for New York City
-var luigismarker = L.marker([40.68965691085725, -73.96537769031497]).addTo(map);
+var luigismarker = L.marker([40.62081° N, 74.02676° W]).addTo(map);
 
 // Add a popup to the marker
 luigismarker.bindPopup(`
@@ -23,7 +23,7 @@ luigismarker.bindPopup(`
 
 
 // Add a marker to the map for New York City
-var prattinstmarker = L.marker([40.69099831383163, -73.96332055134893]).addTo(map);
+var prattinstmarker = L.marker([40.62081° N, 74.02676° W]).addTo(map);
 
 
 // Add a popup to the marker
@@ -36,7 +36,7 @@ prattinstmarker.bindPopup(`
 
 
 // Add a marker to the map for New York City
-var ftgreeneparkmarker = L.marker([40.69271525220281, -73.97682542294763]).addTo(map);
+var ftgreeneparkmarker = L.marker([40.62081° N, 74.02676° W]).addTo(map);
 
 
 // Add a popup to the marker
